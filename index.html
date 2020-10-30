@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="keywords" content="ワッゼド,３ＤＣＡＤ,ペンライト,コンサート,ＡＰＰ,商品開発,マイコン,ピアッサー,ＰＩＣ，ＡＶＲ，スマホアプリ，九州，ホタル発光，流星，ストロボ" />
+  <meta name="description" content="株式会社ワッゼドは、中小零細企業の味方です。企画立案から量産までお手伝いします。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>ペンライト｜発光パターン</title>
+  <meta property="og:title" content="株式会社ワッゼド|皆様に感動と楽しい時間をご提供します">
+  <meta property="og:description" content="株式会社ワッゼドは、中小零細企業の味方です。企画立案から量産までお手伝いします。">
+  <meta property="og:url" content="http://wazzedo.hippy.jp/">
+  <meta property="og:image" content="https://wazzedo.hippy.jp/wazzedo-ogp.png">
+  <meta property="og:site_name" content="ワッゼド企業情報サイト">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="http://wazzedo.hippy.jp" />
+  <link rel="stylesheet" href="led.css"  type="text/css">
+  <link rel="shortcut icon" href="faviconwazzedo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Rubik:400,900italic' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+ <meta name="google-site-verification" content="XvPiLm4HHB8latpnyDmiV1HjOLk2YdE1Uh0alHo_Jdw" />
+</head>
+<body>
+   <canvas id="canvas"></canvas>
+
+
+  <div id="main">
+    <div class="clouds"></div>
+   <div class="luminous">
+     <!--<h1>ペンライト発光パターン例</h1>-->
+  <h1><img src="https://i.imgur.com/U2o6NPk.gif"  alt="" width="290" height="auto"/></h1>
+  <div class="bats">
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+<div class="bat">
+<div class="bat__head">
+<div class="bat__eye"></div>
+<div class="bat__eye"></div>
+</div>
+<div class="bat__wing"></div>
+<div class="bat__wing"></div>
+</div>
+</div>
+
+     <div class="lightbar">
+       <div id="light-1" class="light strobe blue">
+         <div class="inner-light"></div>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+
+       </div>
+       <div id="light-2" class="light strobe blue">
+         <div class="inner-light"></div>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+
+       </div>
+
+       <div id="light-4" class="light strobe red delay">
+         <div class="inner-light"></div>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+
+       </div>
+       <div id="light-5" class="light strobe red delay">
+         <div class="inner-light"></div>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+         <p class="bulb"></p>
+
+       </div>
+     </div>
+     <div class="body"><img src="https://i.imgur.com/b6Gafq1.png"  height="255" width="auto" class="body"></div>
+     <!--<div class="body-logo"><img src="https://i.imgur.com/obNNs2S.gif" width="11.0" height="auto" alt=""></div>-->
+     <div class="body-logo"><img src="https://i.imgur.com/YFXRv1a.gif" width="18.5" height="auto" alt="" ></div>
+     </div>
+     <div class="controls">
+        <div class="default-buttons">
+          <h2></h2>
+          <button id="default" class="active">ストロボ１</button>
+          <button id="alt">ストロボ２</button>
+          <button id="firefly">ホタル</button>
+           <button id="meteor">流星</button>
+
+        </div>
+        <div class="traffic-buttons">
+          <h2></h2>
+          <button id="caution">内から外</button>
+          <button id="warn-right">上から下</button>
+          <button id="warn-left">下から上</button>
+          <button id="off">Off</button>
+       </div>
+     </div>
+     <div class="return">
+            <a class="home" href="penlight.html" ><i class="fa fa-home"></i>戻る</a>
+          </div>
+  <script src="led.js"></script>
+ </div>
+
+</body>
+</html>
