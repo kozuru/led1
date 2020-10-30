@@ -48,7 +48,7 @@ var StarsRenderer = /** @class */function () {
   canvasName, hue, speedFactor, starCount) {
     if (canvasName === void 0) {canvasName = 'canvas';}
     if (hue === void 0) {hue = 217;}
-    if (speedFactor === void 0) {speedFactor = 5e4;}
+    if (speedFactor === void 0) {speedFactor = 9e4;}
     if (starCount === void 0) {starCount = 1100;}
     this.canvasName = canvasName;
     this.hue = hue;
@@ -101,7 +101,7 @@ function animations() {
   window.requestAnimationFrame(animations);
 }
 
-var starsRenderer = new StarsRenderer('canvas', 217, 5e4, 1100);
+var starsRenderer = new StarsRenderer('canvas', 217, 9e4, 1100);
 //Code to intialize the animation
 animations();
 
